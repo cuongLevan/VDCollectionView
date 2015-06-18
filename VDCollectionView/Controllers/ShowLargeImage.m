@@ -11,6 +11,9 @@
 static NSUInteger currentRow;
 
 @interface ShowLargeImage ()
+{
+    NSUInteger numRowOfArray;
+}
 
 @end
 
@@ -24,6 +27,7 @@ static NSUInteger currentRow;
     [super viewDidLoad];
     imgShow.image=[UIImage imageNamed:nameImage];
     currentRow=row;
+    numRowOfArray=[[mArrayImage objectAtIndex:section]count];
     
     // Do any additional setup after loading the view.
 }
@@ -53,14 +57,19 @@ static NSUInteger currentRow;
 
 - (IBAction)doNext:(id)sender {
     currentRow++;
-    if(currentRow <[[mArrayImage objectAtIndex:section]count])
+    if(currentRow <numRowOfArray)
     {
     NSString *nameOfImage = [mArrayImage [section] objectAtIndex:currentRow];
     imgShow.image=[UIImage imageNamed:nameOfImage];
     }
     else
     {
-        currentRow=[[mArrayImage objectAtIndex:section]count]-1;
+        
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Information" message:@"No picture next" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        [alert show];
+        currentRow=numRowOfArray-1;
+        
+
     }
     NSLog(@"Next %lu",currentRow);
 }
@@ -73,6 +82,10 @@ static NSUInteger currentRow;
         imgShow.image=[UIImage imageNamed:nameOfImage];
     }
     @catch(NSException *error){
+        
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Information" message:@"No picture previous" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        [alert show];
+        
         currentRow=0;
     }
     @finally{
