@@ -14,6 +14,13 @@
 		5E38BB121B3260BD005F4747 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E38BB111B3260BD005F4747 /* Images.xcassets */; };
 		5E38BB151B3260BD005F4747 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E38BB131B3260BD005F4747 /* LaunchScreen.xib */; };
 		5E38BB211B3260BD005F4747 /* VDCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E38BB201B3260BD005F4747 /* VDCollectionViewTests.m */; };
+		5E38BB2B1B32622A005F4747 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 5E38BB2A1B32622A005F4747 /* images */; };
+		5E38BB2D1B326241005F4747 /* Modals in Resources */ = {isa = PBXBuildFile; fileRef = 5E38BB2C1B326241005F4747 /* Modals */; };
+		5E38BB2F1B326252005F4747 /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = 5E38BB2E1B326252005F4747 /* Controllers */; };
+		5E38BB311B326266005F4747 /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 5E38BB301B326266005F4747 /* Views */; };
+		5E38BB341B326290005F4747 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E38BB331B326290005F4747 /* CollectionViewController.m */; };
+		5E38BB371B327345005F4747 /* HeadCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E38BB361B327345005F4747 /* HeadCollection.m */; };
+		5E38BB3A1B327B65005F4747 /* ShowLargeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E38BB391B327B65005F4747 /* ShowLargeImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,16 @@
 		5E38BB1A1B3260BD005F4747 /* VDCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VDCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E38BB1F1B3260BD005F4747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E38BB201B3260BD005F4747 /* VDCollectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDCollectionViewTests.m; sourceTree = "<group>"; };
+		5E38BB2A1B32622A005F4747 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		5E38BB2C1B326241005F4747 /* Modals */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modals; sourceTree = "<group>"; };
+		5E38BB2E1B326252005F4747 /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
+		5E38BB301B326266005F4747 /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
+		5E38BB321B326290005F4747 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = Controllers/CollectionViewController.h; sourceTree = "<group>"; };
+		5E38BB331B326290005F4747 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = Controllers/CollectionViewController.m; sourceTree = "<group>"; };
+		5E38BB351B327345005F4747 /* HeadCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeadCollection.h; path = Controllers/HeadCollection.h; sourceTree = "<group>"; };
+		5E38BB361B327345005F4747 /* HeadCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeadCollection.m; path = Controllers/HeadCollection.m; sourceTree = "<group>"; };
+		5E38BB381B327B65005F4747 /* ShowLargeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShowLargeImage.h; path = Controllers/ShowLargeImage.h; sourceTree = "<group>"; };
+		5E38BB391B327B65005F4747 /* ShowLargeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShowLargeImage.m; path = Controllers/ShowLargeImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +98,10 @@
 		5E38BB031B3260BD005F4747 /* VDCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				5E38BB301B326266005F4747 /* Views */,
+				5E38BB2E1B326252005F4747 /* Controllers */,
+				5E38BB2C1B326241005F4747 /* Modals */,
+				5E38BB2A1B32622A005F4747 /* images */,
 				5E38BB081B3260BD005F4747 /* AppDelegate.h */,
 				5E38BB091B3260BD005F4747 /* AppDelegate.m */,
 				5E38BB0B1B3260BD005F4747 /* ViewController.h */,
@@ -89,6 +110,12 @@
 				5E38BB111B3260BD005F4747 /* Images.xcassets */,
 				5E38BB131B3260BD005F4747 /* LaunchScreen.xib */,
 				5E38BB041B3260BD005F4747 /* Supporting Files */,
+				5E38BB321B326290005F4747 /* CollectionViewController.h */,
+				5E38BB331B326290005F4747 /* CollectionViewController.m */,
+				5E38BB351B327345005F4747 /* HeadCollection.h */,
+				5E38BB361B327345005F4747 /* HeadCollection.m */,
+				5E38BB381B327B65005F4747 /* ShowLargeImage.h */,
+				5E38BB391B327B65005F4747 /* ShowLargeImage.m */,
 			);
 			path = VDCollectionView;
 			sourceTree = "<group>";
@@ -199,9 +226,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E38BB2D1B326241005F4747 /* Modals in Resources */,
+				5E38BB2B1B32622A005F4747 /* images in Resources */,
+				5E38BB2F1B326252005F4747 /* Controllers in Resources */,
 				5E38BB101B3260BD005F4747 /* Main.storyboard in Resources */,
 				5E38BB151B3260BD005F4747 /* LaunchScreen.xib in Resources */,
 				5E38BB121B3260BD005F4747 /* Images.xcassets in Resources */,
+				5E38BB311B326266005F4747 /* Views in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +250,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E38BB3A1B327B65005F4747 /* ShowLargeImage.m in Sources */,
+				5E38BB341B326290005F4747 /* CollectionViewController.m in Sources */,
 				5E38BB0D1B3260BD005F4747 /* ViewController.m in Sources */,
 				5E38BB0A1B3260BD005F4747 /* AppDelegate.m in Sources */,
 				5E38BB071B3260BD005F4747 /* main.m in Sources */,
+				5E38BB371B327345005F4747 /* HeadCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
